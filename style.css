@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap');
+
+::-webkit-scrollbar { /* chrome based */
+  width: 0px;  /* ширина scrollbar'a */
+  background: transparent;  /* опционально */
+}
+
+body {
+  font-family: 'JetBrains Mono', monospace;
+  background: url(img/main5.jpg) no-repeat fixed;
+  background-size: cover;
+  background: linear-gradient(#0064a7, #2b7dcad8);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1300px;
+  width: 100%;
+}
+
+/* Header */
+
+.header {
+  font-family: 'JetBrains Mono', monospace;
+  padding-top: 5px;
+  position: absolute;
+  width: 100%;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo { 
+    width: 50px; 
+}
+
+/* Nav */
+
+.nav {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+nav ul li {
+  display: inline;
+}
+
+.nav-link {
+  color: #fff;
+  margin: 0 20px;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: red;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.intro-inner {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.intro-title {
+  font-family: 'JetBrains Mono', monospace;
+  color: #fff;
+  font-size: 120px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 12px #470000;
+  text-align: center;
+  letter-spacing: 20px;
+  margin: 0;
+}
+
+/* .intro-title::first-letter {
+  text-shadow: none;
+  color: rgba(255, 0, 0, 0.938);
+} */
+
+/* Section */
+
+.section {
+  padding: 80px 0;
+  /* background: url(img/main4.jpg) no-repeat;
+  background-size: cover; */
+}
+.section-header {
+  margin: 0 auto 40px;
+  max-width: 950px;
+  text-align: center;
+  width: 100%;
+}
+
+.section-suptitle {
+  color: #fff;
+  /* font-family: 'Amatic SC', cursive; */
+  font-size: 24px;
+}
+
+.section-title {
+  color: #fff;
+  /* font-family: 'Amatic SC', cursive; */
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-title::after {
+  background-color: #ffffff;
+  content: "";
+  display: block;
+  height: 3px;
+  margin: 30px auto ;
+  width: 60px;
+}
+
+.section-text {
+  color: #fff;
+  font-size: 15px;
+  text-align: justify;
+}
