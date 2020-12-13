@@ -57,6 +57,10 @@ nav ul li {
   color: red;
 }
 
+.menu-button {
+  display: none;
+}
+
 .intro {
   display: flex;
   flex-direction: column;
@@ -81,6 +85,17 @@ nav ul li {
   margin: 0;
 }
 
+.intro-title-hide {
+  font-family: 'JetBrains Mono', monospace;
+  color: #fff;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 12px #470000;
+  text-align: center;
+  letter-spacing: 20px;
+  margin: 0;
+  display: none;
+}
 /* .intro-title::first-letter {
   text-shadow: none;
   color: rgba(255, 0, 0, 0.938);
@@ -127,4 +142,99 @@ nav ul li {
   color: #fff;
   font-size: 15px;
   text-align: justify;
+}
+
+/* responsive */
+
+@media (max-width: 640px) {
+  .intro-title {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 500px) {
+  .menu-button {
+    display: block;
+    position: absolute;
+    right: 35px;
+    top: 40px;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .menu-button::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    margin-top: -7px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: transform 0.2s;
+  }
+  .menu-button::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    margin-top: 7px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: transform 0.2s;
+  }
+  .menu-button-active {
+    height: 0;
+  }
+  .menu-button-active::before {
+    transform: rotate(45deg);
+    margin-top: 0;
+  }
+  .menu-button-active::after {
+    transform: rotate(-45deg);
+    margin-top: 0;
+  }
+  .header-inner {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #8888886c;
+    width: 250px;
+    padding-bottom: 60px;
+    z-index: 1;
+  }
+  .header-inner-active {
+    display: flex;
+  }
+  .logo {
+    
+  }
+  /* .nav {
+    margin: auto;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-link {
+    margin-right: 0;
+    margin-bottom: 17px;
+  } */
+}
+
+@media (max-width: 375px) {
+  .intro-title {
+    display: none;
+  }
+  .intro-title-hide {
+    display: block;
+  }
 }
