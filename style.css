@@ -213,11 +213,12 @@ nav ul li {
   }
   .header-inner-active {
     display: flex;
+    justify-content: space-between;
   }
-  .logo {
+  /* .logo {
     
-  }
-  /* .nav {
+  } */
+  .nav {
     margin: auto;
     order: 2;
     display: flex;
@@ -225,16 +226,12 @@ nav ul li {
     align-items: center;
   }
   .nav-link {
-    margin-right: 0;
-    margin-bottom: 17px;
-  } */
+
+  }
 }
 
 @media (max-width: 375px) {
   .intro-title {
-    display: none;
-  }
-  .intro-title-hide {
-    display: block;
+    font-size: 40px;
   }
 }
