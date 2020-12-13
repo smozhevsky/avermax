@@ -7,14 +7,21 @@
 
 body {
   font-family: 'JetBrains Mono', monospace;
-  background: url(img/main5.jpg) no-repeat fixed;
+  background: url(img/main5.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .container {
   margin: 0 auto;
   max-width: 1300px;
-  width: 100%;
+  width: 95%;
 }
 
 /* Header */
