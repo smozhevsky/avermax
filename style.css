@@ -9,7 +9,6 @@ body {
   font-family: 'JetBrains Mono', monospace;
   background: url(img/main5.jpg) no-repeat fixed;
   background-size: cover;
-  background: linear-gradient(#0064a7, #2b7dcad8);
 }
 
 .container {
