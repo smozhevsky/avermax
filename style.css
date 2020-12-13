@@ -92,17 +92,6 @@ nav ul li {
   margin: 0;
 }
 
-.intro-title-hide {
-  font-family: 'JetBrains Mono', monospace;
-  color: #fff;
-  font-size: 40px;
-  text-transform: uppercase;
-  text-shadow: 2px 2px 12px #470000;
-  text-align: center;
-  letter-spacing: 20px;
-  margin: 0;
-  display: none;
-}
 /* .intro-title::first-letter {
   text-shadow: none;
   color: rgba(255, 0, 0, 0.938);
@@ -112,8 +101,6 @@ nav ul li {
 
 .section {
   padding: 80px 0;
-  /* background: url(img/main4.jpg) no-repeat;
-  background-size: cover; */
 }
 .section-header {
   margin: 0 auto 40px;
@@ -215,27 +202,26 @@ nav ul li {
     position: absolute;
     right: 0;
     top: 0;
-    background-color: #8888886c;
+    background-color: #8888884d;
     width: 250px;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
     z-index: 1;
   }
   .header-inner-active {
     display: flex;
     justify-content: space-between;
   }
-  /* .logo {
-    
-  } */
+  #logo {
+    display: none;
+  }
   .nav {
-    margin: auto;
-    order: 2;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
   }
   .nav-link {
-
+  
   }
 }
 
