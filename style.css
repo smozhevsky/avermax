@@ -146,6 +146,8 @@ nav ul li {
 }
 
 .section-text {
+  display: flex;
+  flex-direction: column;
   color: #fff;
   font-size: 15px;
   text-align: justify;
