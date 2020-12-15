@@ -58,8 +58,10 @@ body {
 }
 
 .navigation-link {
+  cursor: pointer;
   color: #fff;
   text-decoration: none;
+  transition: .2s;
 }
 
 .navigation-link:hover {
