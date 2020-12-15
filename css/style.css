@@ -7,7 +7,7 @@
 
 body {
   font-family: 'JetBrains Mono', monospace;
-  background: url(img/main5.jpg);
+  background: url(../img/main5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -39,28 +39,30 @@ body {
   align-items: center;
 }
 
-#logo { 
-    width: 50px; 
+#logo {
+  width: 50px;
 }
 
 /* Nav */
 
-.nav {
+.navigation-list {
   font-size: 16px;
   text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
 }
 
-nav ul li {
-  display: inline;
+.navigation-item {
+  margin-left: 50px;
+  list-style-type: none;
 }
 
-.nav-link {
+.navigation-link {
   color: #fff;
-  margin: 0 20px;
   text-decoration: none;
 }
 
-.nav-link:hover {
+.navigation-link:hover {
   color: red;
 }
 
@@ -91,11 +93,6 @@ nav ul li {
   letter-spacing: 20px;
   margin: 0;
 }
-
-/* .intro-title::first-letter {
-  text-shadow: none;
-  color: rgba(255, 0, 0, 0.938);
-} */
 
 /* Section */
 
