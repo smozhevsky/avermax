@@ -45,26 +45,26 @@ body {
 
 /* Nav */
 
-.list {
+.navigation-list {
   font-size: 16px;
   text-transform: uppercase;
   display: flex;
   justify-content: space-between;
 }
 
-.list-item {
+.navigation-item {
   margin-left: 50px;
   list-style-type: none;
 }
 
-.list-link {
+.navigation-link {
   cursor: pointer;
   color: #fff;
   text-decoration: none;
   transition: .2s;
 }
 
-.list-link:hover {
+.navigation-link:hover {
   color: red;
 }
 
