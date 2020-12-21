@@ -171,7 +171,7 @@ body {
     position: absolute;
     right: 0;
     top: 0;
-    transition: transform 0.2s;
+    transition: transform 0.5s;
   }
   .menu-button::after {
     content: "";
@@ -183,17 +183,17 @@ body {
     position: absolute;
     right: 0;
     top: 0;
-    transition: transform 0.2s;
+    transition: transform 0.5s;
   }
   .menu-button.active {
     height: 0;
   }
   .menu-button.active::before {
-    transform: rotate(45deg);
+    transform: rotate(320deg);
     margin-top: 0;
   }
   .menu-button.active::after {
-    transform: rotate(-45deg);
+    transform: rotate(-320deg);
     margin-top: 0;
   }
   .header-inner {
@@ -204,7 +204,7 @@ body {
     top: 0;
     background-color: #8888884d;
     width: 250px;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
     z-index: 1;
   }
   .header-inner.active {
@@ -221,7 +221,8 @@ body {
   }
 
   .navigation-item {
-    padding-top: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 
