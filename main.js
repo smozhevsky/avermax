@@ -5,6 +5,7 @@ menuButton.addEventListener("click", function () {
   menuButton.classList.toggle("menu-button-active");
   menu.classList.toggle("header-inner-active");
 });
+
 const anchors = document.querySelectorAll('a[href*="#"]');
 
 for (let anchor of anchors) {
@@ -19,3 +20,7 @@ for (let anchor of anchors) {
     });
   });
 }
+menuButton.addEventListener("click", function () {
+  menuButton.classList.toggle("active");
+  menu.classList.toggle("active");
+});
